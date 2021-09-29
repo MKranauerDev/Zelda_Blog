@@ -1,0 +1,52 @@
+.contenedorError{
+    position: relative;
+    display: inline-block;
+    text-align:center;
+    h1, article{
+        color: gold;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        animation: cambioDeColor 6s linear infinite alternate both;
+    }
+    h1{
+        font-size: 150px;
+        top: 20%;    
+    }
+    .fraseUno{
+        width: 100vw;
+        font-size: 50px;
+        top: 45%;
+    }
+    .fraseDos{
+        width: 100vw;
+        font-size: 60px;
+        top: 70%;
+        
+    }
+    img{
+        height: 80vh;
+        width: 100vw;
+        z-index: -1;
+    }
+
+    @keyframes cambioDeColor{
+        0%{
+            color: gold;
+        }
+        33.3333%{
+            color: #ce5d11;
+        }
+        66.6666%{
+            color:lightseagreen;
+        }
+        100%{
+            color:lime;
+        }
+    }
+}
+
+
+    

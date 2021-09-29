@@ -1,0 +1,35 @@
+.seccionUnoJuego{
+    display: flex;
+    flex:row;
+    justify-content: center;
+    #carrouselJuegos{
+        background-color: darkorange;
+        padding-bottom: 20px;
+        width: 100vw;
+        text-align: center;
+        h1{
+            padding-top: 20px;
+        }
+        img{
+            width: 50%;
+            padding: 10px;
+        }
+    }
+}
+
+.contenedorJuegos{
+    width: 100px;
+    display: flex;
+    flex-direction: row; 
+    .caratulasJuegos{
+        display: flex;
+        flex-direction: column;    
+        margin: 30px;
+        text-align: center;
+        article{
+            margin: 10px;
+            width: 100%;
+            height: 100%
+        }
+    }  
+}
