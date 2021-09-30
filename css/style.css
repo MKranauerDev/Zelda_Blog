@@ -354,7 +354,7 @@ footer {
 
 footer #pie {
   height: 435px;
-  width: 100vw;
+  width: 98.9vw;
   color: gold;
   text-align: center;
   margin-bottom: 5px;
@@ -527,7 +527,7 @@ footer {
 
 footer #pie {
   height: 435px;
-  width: 100vw;
+  width: 98.9vw;
   color: gold;
   text-align: center;
   margin-bottom: 5px;
@@ -690,8 +690,16 @@ footer #desarrollado h3 a :hover {
   font-family: 'Raleway', sans-serif;
 }
 
-::-webkit-scrollbar {
-  display: none;
+body::-webkit-scrollbar {
+  background: black;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: gold;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
 }
 
 .contenedor {
@@ -699,7 +707,7 @@ footer #desarrollado h3 a :hover {
 }
 
 .contenedor iframe {
-  width: 100vw;
+  width: 98.9vw;
   height: 500px;
   margin-top: 50px;
 }
@@ -771,7 +779,7 @@ footer #desarrollado h3 a :hover {
 }
 
 .seccionTres {
-  width: 100vw;
+  width: 100%;
   padding: 30px 0 30px;
   border-top: 1px solid gold;
 }
@@ -865,7 +873,7 @@ footer #desarrollado h3 a :hover {
 @media only screen and (min-width: 850px) {
   .seccionTres {
     background: radial-gradient(#09545c, black);
-    width: 100vw;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

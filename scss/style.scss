@@ -13,13 +13,20 @@
     padding: 0;
     font-family: 'Raleway', sans-serif;
 }
-::-webkit-scrollbar {
-    display: none;
+body::-webkit-scrollbar{
+    background: black;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background:gold;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
 }
 .contenedor {    
     background-color: black;
     iframe {
-        width: 100vw;
+        width: 98.9vw;
         height: 500px;
         margin-top:50px;       
     }
@@ -82,7 +89,7 @@
     }
 }
 .seccionTres {
-    width: 100vw;
+    width: 100%;
     padding: 30px 0 30px;
     border-top: 1px solid gold;
 }   
@@ -165,7 +172,7 @@
 @media only screen and (min-width:850px) {
     .seccionTres {
         background: radial-gradient(#09545c, black);
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex: row;
         justify-content: center;
