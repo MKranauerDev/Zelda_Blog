@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
 @import "navbar";
 @import "footer";
 
@@ -6,10 +9,7 @@
 }
 .wrap {
 	width: 1100px;
-	margin: 50px auto;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
+	margin: 50px auto;	
 	display: flex;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
@@ -24,7 +24,7 @@
 	.tarjeta {
 		width: 300px;
 		height: 350px;
-		background: gold;
+		background: radial-gradient(#09545c, black);
 		position: relative;
 		-webkit-transform-style: preserve-3d;
 		transform-style: preserve-3d;
@@ -40,20 +40,21 @@
 			}
 		}
 		.adelante,
-		.atras {
-			width: 100%;
-			height: 100%;
+		.atras {			
 			position: absolute;
 			top: 0;
 			left: 0;
 			-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 		.atras {
+			width: 300px;
+			height: 350px;
 			-webkit-transform: rotateY(180deg);
-			transform: rotateY(180deg);
-
-			padding: 15px;
+			transform: rotateY(180deg);			
 			display: -webkit-box;
 			display: -webkit-flex;
 			display: -ms-flexbox;
@@ -66,15 +67,41 @@
 			-webkit-align-items: center;
 			-ms-flex-align: center;
 			align-items: center;
-
 			text-align: center;
-			color: black;
-			font-family: "open sans";
-			background: #F29720;
+			color: gold;
+			font-family: 'Libre Baskerville', serif;
+			background: radial-gradient(#09545c, black);
+			padding:0 20px;
+			p{
+				color: white;
+			}
+			
 		}
 	}
 }
 .tarjeta-wrap:hover .tarjeta {
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
+}
+
+@media only screen and (max-width:850px){
+	.wrap{
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		margin-left: 1rem;
+		align-items: center;
+		
+	}
+	.atras{
+		h3{
+			color: gold;
+			font-family: 'Libre Baskerville', serif;
+		}
+		p{
+			padding: 10px;
+			color: gold;
+		}
+		
+	}
 }

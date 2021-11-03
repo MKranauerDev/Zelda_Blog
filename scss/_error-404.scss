@@ -12,19 +12,30 @@
         animation: cambioDeColor 6s linear infinite alternate both;
     }
     h1{
-        font-size: 150px;
+        font-size: 7em;
         top: 20%;    
     }
     .fraseUno{
         width: 100vw;
-        font-size: 50px;
+        font-size: 3em;
         top: 45%;
     }
     .fraseDos{
         width: 100vw;
-        font-size: 60px;
+        font-size: 3.5em;
         top: 70%;
         
+    }
+    @media only screen and (max-width:850px) {
+       h1{
+           font-size: 50px;
+       }
+        .fraseUno{
+        font-size: 20px;
+       } 
+       .fraseDos{
+           font-size:30px
+       }
     }
     img{
         height: 80vh;

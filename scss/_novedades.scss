@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/*Just the background stuff*/
+
+
+/*My hum... body.. yeah..*/
+body {
+  background-image: url(../img/Site-background-dark.png);
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+
+  .contenedorBlog {
+    background-color: black;
+    position: relative;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+
+    .cardBlog {
+      position: relative;
+      height: 450px;
+      width: 900px;
+      margin: 150px auto;
+      background-color: #FFF;
+      -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+
+      .thumbnail {
+        float: left;
+        position: relative;
+        left: 30px;
+        top: -30px;
+        height: 320px;
+        width: 530px;
+        -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+        overflow: hidden;
+        .left {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          height: 100%;
+          width: 100%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          
+        }
+      }
+
+      .right {
+        margin-left: 590px;
+        margin-right: 20px;
+
+        h1 {
+          padding-top: 15px;
+          font-size: 1.3rem;
+          color: #4B4B4B;
+        }
+
+        .author {
+          background-color: #9ECAFF;
+          height: 30px;
+          width: 60%;
+          border-radius: 20px;
+
+          h2 {
+            padding-top: 8px;
+            margin-right: 6px;
+            text-align: center;
+            font-size: 0.8rem;
+          }
+        }
+
+        .author>img {
+          padding-top: 5px;
+          margin-left: 10px;
+          float: left;
+          height: 25px;
+          width: 25 px;
+          border-radius: 90%;
+        }
+
+        .separator {
+          margin-top: 10px;
+          border: 1px solid #C3C3C3;
+        }
+
+        p {
+          text-align: justify;
+          padding-top: 10px;
+          font-size: 0.95rem;
+          line-height: 150%;
+          color: #4B4B4B;
+        }
+      }
+
+      .contenedorTitulo {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+
+        h4 {
+          left: 30px;
+          font-size: 6rem;
+          color: #C3C3C3;
+        }
+
+        h5 {
+          font-size: 2rem;
+          color: #C3C3C3;
+          margin-top: -20px;
+          margin-left: 10px;
+        }
+      }
+
+      ul {
+        margin-left: 250px;
+
+        li {
+          display: inline;
+          list-style: none;
+          padding-right: 40px;
+          color: #7B7B7B;
+        }
+      }
+
+      
+    }
+
+  }
+}
