@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-/*Just the background stuff*/
 
-
-/*My hum... body.. yeah..*/
 body {
   background-image: url(../img/Site-background-dark.png);
   background-attachment: fixed;
@@ -21,7 +18,7 @@ body {
       height: 450px;
       width: 900px;
       margin: 150px auto;
-      background-color: #FFF;
+      background: #FFF;
       -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
       box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
@@ -37,6 +34,7 @@ body {
         -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
         box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
         overflow: hidden;
+
         .left {
           position: absolute;
           left: 50%;
@@ -46,7 +44,7 @@ body {
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-          
+
         }
       }
 
@@ -129,9 +127,143 @@ body {
           color: #7B7B7B;
         }
       }
-
-      
     }
+  }
+}
 
+@media only screen and (max-width:1200px) {
+  body {
+    .contenedorBlog {
+      .cardBlog {
+        background: gold;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 78%;
+
+        .thumbnail {
+          position: absolute;
+          height: 50%;
+          width: 90%;
+          -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+        }
+        .right {
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-top: 60%;
+          padding-left: 15px;
+          padding-right: 15px;
+          .separator{
+            display: none;
+          }
+          h1 {
+            padding-top: 0px;
+            font-size: 1.3rem;
+            color: #4B4B4B;
+          }          
+        }
+        .contenedorTitulo{
+          margin-top: 40%;
+          
+         }
+      }
+    }
+  }
+}
+@media only screen and (max-width:650px) {
+  body {
+    .contenedorBlog {
+      .cardBlog {
+        background: gold;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 78%;
+
+        .thumbnail {
+          position: absolute;
+          height: 30%;
+          width: 83%;
+          -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+
+        }
+
+        .right {
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-top: 80%;
+          padding-left: 15px;
+          padding-right: 15px;
+          .separator{
+            display: none;
+          }
+          h1 {
+            padding-top: 0px;
+            font-size: 1.3rem;
+            color: #4B4B4B;
+          }          
+        }
+        .contenedorTitulo{
+          margin-top: 45%;
+          
+         }
+      }
+    }
+  }
+}
+@media only screen and (max-width:500px) {
+  body {
+    .contenedorBlog {
+      .cardBlog {
+        background: gold;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 78%;
+
+        .thumbnail {
+          position: absolute;
+          height: 20%;
+          width: 70%;
+          -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+
+        }
+
+        .right {
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-top: 80%;
+          padding-left: 15px;
+          padding-right: 15px;
+          .separator{
+            display: none;
+          }
+          h1 {
+            padding-top: 0px;
+            font-size: 1.5rem;
+            color: #4B4B4B;
+          }   
+          .author{
+            width: auto;
+          }       
+        }
+        .contenedorTitulo{
+          margin-top: 50%;
+          h4{
+            font-size: 2.5rem;
+          }
+          h5{
+            font-size: 2rem;
+            margin-top: auto;
+          }
+         }
+      }
+    }
   }
 }
