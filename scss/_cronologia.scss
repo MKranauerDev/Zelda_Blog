@@ -17,5 +17,16 @@
     height: 100%;
     width: 80%;
     margin: auto;
-    padding: 10px;
+    padding: 10px;    
+    .collapse{
+        background: gold;
+    }
+    #desarrollo{
+        background: grey;
+        color: gold;
+    }    
+    .accordion-button{
+        background: grey;
+        color: gold;
+    }    
 }
